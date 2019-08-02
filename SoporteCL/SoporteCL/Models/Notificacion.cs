@@ -25,7 +25,7 @@ namespace SoporteCL.Models
         //TODO: configurar codigo para utilizarlo para su control en la interfaz (icono de leido en vista Notificaciones)
         public int Leido { get; set; }
 
-        //TODO: eliminar este parametro y en su lugar utilizar Leido para su control en la interfaz (icono de leido en vista Notificaciones
+        //TODO: eliminar este parametro y en su lugar utilizar Leido para su control en la interfaz (icono de leido en vista Notificaciones)
         public bool Visible { get; set; }
 
         //Constructor por copia de Notificacion

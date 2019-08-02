@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SoporteCL.Views.NotificacionesNoLeidas"
+             Title="{Binding Title}">
+
+    <!--Vista contenida en la etiqueta "No Leidas". Muestra una lista de las notificaciones que no han sido leidas. 
+    Dentro de esta vista puede marcarse notificaciones como leidas o borrarlas-->
+    <StackLayout>
+
+        <!--Lista que muestra como contenido las notificaciones de la lista UnreadNotifs del ViewModel. 
+        Puede refrescarse arrastrando la lista verticalmente, ejecutando el comando LoadUnreadCommand-->
+        <ListView x:Name="ListaNotificacionesView"
+                ItemsSource="{Binding UnreadNotifs}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadUnreadCommand}"
+                IsPullToRefreshEnabled="true" 
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <!--Notificacion, elemento de la lista-->
+                        <StackLayout Orientation="Horizontal" Spacing="30" Padding="30">
+                            <!--Reconocedores de gestos que activan Listeners en el codigo atras. Tienen como parametro el Id de la Notificacion-->
+                            <StackLayout.GestureRecognizers>
+                                <!--Al deslizar el elemento horizontalmente (Swiped), se podra borrar de la lista-->
+                                <SwipeGestureRecognizer Direction="Left,Right" Swiped="UnreadDelete_Swiped" Threshold="50" CommandParameter="{Binding Id}"/>
+                                <!--Al tocar el elemento (Tapped), se podra marcar como leido-->
+                                <TapGestureRecognizer Tapped="MarkReadDelete_Tapped" CommandParameter="{Binding Id}"/>
+                            </StackLayout.GestureRecognizers>
+                            <!--Icono que se muestra si la notificacion no ha sido leida. Es esta vista se mostrará siempre -->
+                            <Image Source="reddot.png" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <StackLayout Orientation="Vertical">
+                                <!--Etiqueta que muesta el asunto de la notificacion-->
+                                <Label Text="{Binding Asunto}" 
+                                        LineBreakMode="WordWrap" FontAttributes="Bold"
+                                        Style="{DynamicResource ListItemTextStyle}" 
+                                        FontSize="20" />
+                                <!--Etiqueta que muestra el usuario destino de la notificacion-->
+                                <Label Text="{Binding Destino}" 
+                                        LineBreakMode="NoWrap" 
+                                        Style="{DynamicResource ListItemTextStyle}" 
+                                        FontSize="10" />
+                                <!--Etiqueta que muestra el contenido de la notificacion-->
+                                <Label Text="{Binding Contenido}" 
+                                        LineBreakMode="WordWrap"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="13" />
+                            </StackLayout>
+                            <!--Boton que al ser pulsado (Cliked), activa el listener que permitira borrar el elemento de la lista. Toma como parametro el Id de la Notificacion-->
+                            <ImageButton x:Name="BotonLeido" Source="delete.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center"
+                                         Clicked="UnreadBorrar_Clicked" CommandParameter="{Binding Id}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

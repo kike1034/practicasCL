@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SoporteCL",
+    "\\SoporteCL.Android",
+    "\\SoporteCL.iOS",
+    "\\SoporteCL.UWP",
+    "\\SoporteCL\\bin\\Debug",
+    "\\SoporteCL\\bin\\Debug\\netstandard2.0",
+    "\\SoporteCL\\bin\\Release"
+  ],
+  "SelectedNode": "\\SoporteCL.UWP\\SoporteCL.UWP.csproj",
+  "PreviewInSolutionExplorer": false
+}

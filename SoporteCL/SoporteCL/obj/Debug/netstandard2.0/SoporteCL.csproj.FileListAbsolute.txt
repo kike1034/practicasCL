@@ -1,4 +1,3 @@
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\SoporteCL.csprojAssemblyReference.cache
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\Notificaciones.xaml.g.cs

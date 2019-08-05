@@ -30,7 +30,7 @@ namespace SoporteCL.ViewModels
 
         public NotificacionesViewModel()
         {
-            Title = "Notificaciones";
+            Title = "Notificaciones recibidas";
             Notifs = new ObservableCollection<Notificacion>();
             total = 0;
 

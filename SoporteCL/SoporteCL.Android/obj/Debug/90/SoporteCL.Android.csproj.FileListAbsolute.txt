@@ -2,7 +2,6 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\Sop
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\SoporteCL.Android.pdb
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\com.companyname.SoporteCL.apk
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\com.companyname.SoporteCL-Signed.apk
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\SoporteCL.dll.mdb
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\SoporteCL.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\SoporteCL.pdb
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
@@ -513,3 +512,4 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\System.Drawing.Common.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\stamp\_ConvertCustomView.stamp
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\SoporteCL.dll.mdb

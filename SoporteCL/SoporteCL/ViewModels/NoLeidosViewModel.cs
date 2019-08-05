@@ -24,7 +24,7 @@ namespace SoporteCL.ViewModels
 
         public NoLeidosViewModel()
         {
-            Title = "No Leidas";
+            Title = "Notificaciones no leidas";
             UnreadNotifs = new ObservableCollection<Notificacion>();
 
             //Se crea un comando que ejecuta el metodo asincrono de recarga

@@ -73,7 +73,7 @@
     <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\xamarin.forms\4.1.0.581479\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\bin\x86\Debug\netstandard2.0\SoporteCL.dll">
+    <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\bin\Debug\netstandard2.0\SoporteCL.dll">
       <PackagePath>SoporteCL.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">

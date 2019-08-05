@@ -12,7 +12,7 @@
     <TabbedPage.Children>
         
         <!--Etiqueta que contendra una vista con todas las notificaciones recibidas (leidas y no leidas)-->
-        <NavigationPage Title="Notifs.">
+        <NavigationPage Title="Recibidas">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_notification.png"/>

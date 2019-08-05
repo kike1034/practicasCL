@@ -52,7 +52,6 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\SoporteCL.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\SoporteCL.pdb
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\SoporteCL.dll.mdb
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items

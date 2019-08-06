@@ -16,7 +16,8 @@ namespace SoporteCL.Services
 
         public NotificacionesDatabase(string dbPath)
         {
-            database = new SQLiteAsyncConnection(dbPath);
+            NotificacionesSQLite notifsq = new NotificacionesSQLite();
+            database = notifsq.GetConnectionAsync();
             
         }
 

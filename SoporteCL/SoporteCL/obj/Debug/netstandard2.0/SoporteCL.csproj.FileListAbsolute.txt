@@ -1,7 +1,3 @@
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\Notificaciones.xaml.g.cs
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\NuevaNotificacion.xaml.g.cs
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\SoporteCL.csproj.CoreCompileInputs.cache
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\SoporteCL.AssemblyInfoInputs.cache
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\SoporteCL.AssemblyInfo.cs
@@ -12,5 +8,9 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\bin\Debug\netstandard
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\SoporteCL.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\ref\SoporteCL.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\SoporteCL.pdb
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\Notificaciones.xaml.g.cs
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\NotificacionesNoLeidas.xaml.g.cs
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\NuevaNotificacion.xaml.g.cs
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\XamlC.stamp

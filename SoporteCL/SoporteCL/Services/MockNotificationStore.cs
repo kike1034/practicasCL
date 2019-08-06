@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SoporteCL.Models;
+using SQLite;
 
 /*
  * Base de datos simulada. Implementa los metodos definidos en INotificationStore
@@ -15,9 +16,12 @@ namespace SoporteCL.Services
     {
         //Lista de notificaciones que simula la tabla de base de datos
         List<Notificacion> listNotif;
+        readonly SQLiteAsyncConnection database;
 
         public MockNotificationStore()
         {
+            NotificacionesSQLite notifsq = new NotificacionesSQLite();
+            database = notifsq.GetConnectionAsync();
             listNotif = new List<Notificacion>();
         }
 
@@ -25,6 +29,9 @@ namespace SoporteCL.Services
         public async Task<bool> AddNotificacionAsync(Notificacion notificacion)
         {
             listNotif.Add(notificacion);
+           /* Console.WriteLine("holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            Console.WriteLine(notificacion.Contenido);*/
+           // return  database.InsertAsync(notificacion);
 
             return await Task.FromResult(true);
         }

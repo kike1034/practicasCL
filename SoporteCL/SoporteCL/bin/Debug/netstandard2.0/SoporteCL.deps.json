@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "5143cc278ba43b7bd3f2cad8c0c6dd637807004d"
+    "signature": "99a7f277f389303cef72d663c1dfd928300e6b94"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,7 +12,7 @@
           "NETStandard.Library": "2.0.3",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "runtime": {
@@ -95,19 +95,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.287"
+            "fileVersion": "4.1.0.295"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.287"
+            "fileVersion": "4.1.0.295"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.287"
+            "fileVersion": "4.1.0.295"
           }
         }
       }
@@ -175,12 +175,12 @@
       "path": "xamarin.essentials/1.2.0",
       "hashPath": "xamarin.essentials.1.2.0.nupkg.sha512"
     },
-    "Xamarin.Forms/4.1.0.581479": {
+    "Xamarin.Forms/4.1.0.618606": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wrO8AOW1xsFoGgT1SUvJ9OEeqAduJOm0xezZGNe0rCiAv2N9Qc/n5uywhlSia1s1k+Zy/hOrhZ4b7/EM6z9oog==",
-      "path": "xamarin.forms/4.1.0.581479",
-      "hashPath": "xamarin.forms.4.1.0.581479.nupkg.sha512"
+      "sha512": "sha512-qJoOu0DiSzsfQj7nuMtKUcl39KsUxfU9yDJ5HU1flM+hnOrSD6IyDgKKxOkqIdmVwAL8R6hISz+b8MB4P5oDFw==",
+      "path": "xamarin.forms/4.1.0.618606",
+      "hashPath": "xamarin.forms.4.1.0.618606.nupkg.sha512"
     }
   }
 }

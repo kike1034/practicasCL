@@ -436,7 +436,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -466,7 +466,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -1069,7 +1069,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -1099,7 +1099,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -1703,7 +1703,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -1733,7 +1733,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -2331,7 +2331,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -2361,7 +2361,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -2964,7 +2964,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -2994,7 +2994,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -3598,7 +3598,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -3628,7 +3628,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -4231,7 +4231,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -4261,7 +4261,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -4865,7 +4865,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
@@ -4895,7 +4895,7 @@
         "dependencies": {
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms": "4.1.0.618606",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -9596,10 +9596,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.1.0.581479": {
-      "sha512": "wrO8AOW1xsFoGgT1SUvJ9OEeqAduJOm0xezZGNe0rCiAv2N9Qc/n5uywhlSia1s1k+Zy/hOrhZ4b7/EM6z9oog==",
+    "Xamarin.Forms/4.1.0.618606": {
+      "sha512": "qJoOu0DiSzsfQj7nuMtKUcl39KsUxfU9yDJ5HU1flM+hnOrSD6IyDgKKxOkqIdmVwAL8R6hISz+b8MB4P5oDFw==",
       "type": "package",
-      "path": "xamarin.forms/4.1.0.581479",
+      "path": "xamarin.forms/4.1.0.618606",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9838,7 +9838,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.1.0.581479.nupkg.sha512",
+        "xamarin.forms.4.1.0.618606.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -9853,7 +9853,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.8",
       "SoporteCL >= 1.0.0",
       "Xamarin.Essentials >= 1.2.0",
-      "Xamarin.Forms >= 4.1.0.581479"
+      "Xamarin.Forms >= 4.1.0.618606"
     ]
   },
   "packageFolders": {
@@ -9910,7 +9910,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.1.0.581479, )"
+            "version": "[4.1.0.618606, )"
           }
         },
         "imports": [

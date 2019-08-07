@@ -50,7 +50,7 @@ namespace SoporteCL.ViewModels
                 var updateNotif = notif as Notificacion;
                 int index = UnreadNotifs.IndexOf(updateNotif);
                 updateNotif.Leido = 1;
-                updateNotif.Visible = false;
+                //---updateNotif.Visible = 0;
                 await NotifStore.UpdateNotificacionAsync(updateNotif);
                 UnreadNotifs.Remove(notif);
                 //Se ejecuta comando de recarga

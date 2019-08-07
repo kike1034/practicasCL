@@ -26,7 +26,7 @@ namespace SoporteCL.Views
             Notificacion = new Notificacion();
             Notificacion.TipoTarget = "Usuario";
             Notificacion.Leido = 0;
-            Notificacion.Visible = true;
+            //Notificacion.Visible = 1;
 
             //La propia vista es el contexto del que se usuaran los datos por Binding
             BindingContext = this;

@@ -7,17 +7,18 @@ using Xamarin.Forms;
 
 using SoporteCL.Models;
 using SoporteCL.Services;
+using SoporteCL.Helpers;
 
 /*
  * Clase ViewModel de la que heredan las demas. Contiene las bases de datos del programa y mediante INotifyPropertyChanged, respondera a cambios en los datos.
  */
 namespace SoporteCL.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : ObservableObject
     {
         //Base de datos simulada de Notificaciones
         //TODO: reemplazar base de datos simulada por conexion a base de datos (eliminar este parametro)
-        public INotificationStore<Notificacion> NotifStore => DependencyService.Get<INotificationStore<Notificacion>>() ?? new MockNotificationStore();
+        public INotificationStore<Notificacion> NotifStore => DependencyService.Get<INotificationStore<Notificacion>>();
 
         bool isBusy = false;
         public bool IsBusy
@@ -33,30 +34,5 @@ namespace SoporteCL.ViewModels
             get { return title; }
             set { SetProperty(ref title, value); }
         }
-
-        protected bool SetProperty<T>(ref T backingStore, T value,
-            [CallerMemberName]string propertyName = "",
-            Action onChanged = null)
-        {
-            if (EqualityComparer<T>.Default.Equals(backingStore, value))
-                return false;
-
-            backingStore = value;
-            onChanged?.Invoke();
-            OnPropertyChanged(propertyName);
-            return true;
-        }
-
-        #region INotifyPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            var changed = PropertyChanged;
-            if (changed == null)
-                return;
-
-            changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
     }
 }

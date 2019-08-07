@@ -350,7 +350,7 @@
       "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         },
         "runtimeTargets": {
           "runtimes/win10-arm/native/e_sqlite3.dll": {
@@ -1008,7 +1008,7 @@
           "runtimes/win10-arm/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
@@ -1642,7 +1642,7 @@
           "runtimes/win10-arm/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
@@ -2273,7 +2273,7 @@
       "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
@@ -2903,7 +2903,7 @@
           "runtimes/win10-x64/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
@@ -3537,7 +3537,7 @@
           "runtimes/win10-x64/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
@@ -4170,7 +4170,7 @@
           "runtimes/win10-x86/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
@@ -4804,7 +4804,7 @@
           "runtimes/win10-x86/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
@@ -9853,7 +9853,8 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.8",
       "SoporteCL >= 1.0.0",
       "Xamarin.Essentials >= 1.2.0",
-      "Xamarin.Forms >= 4.1.0.618606"
+      "Xamarin.Forms >= 4.1.0.618606",
+      "sqlite-net-pcl >= 1.5.231"
     ]
   },
   "packageFolders": {
@@ -9911,6 +9912,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.1.0.618606, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.5.231, )"
           }
         },
         "imports": [

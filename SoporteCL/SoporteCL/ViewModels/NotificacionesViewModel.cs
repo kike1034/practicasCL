@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using SoporteCL.Helpers;
 using SoporteCL.Models;
 using SoporteCL.Views;
 using Xamarin.Forms;
@@ -17,13 +18,16 @@ namespace SoporteCL.ViewModels
     public class NotificacionesViewModel : BaseViewModel
     {
         //Colleccion de Notificaciones no leidas que seran observables
-        public ObservableCollection<Notificacion> Notifs { get; set; }
+        public ObservableRangeCollection<Notificacion> Notifs { get; set; }
         
         //TODO: eliminar variable que sera reemplazada por sequence en base de datos o identificador autoincrementado
-        int total;
+       // int total;
 
         //Comando que permitira recargar la lista de Notificaciones
         public Command LoadNotifsCommand { get; set; }
+
+        //Comando para eliminar una notificacion
+        public Command DeleteNotifsCommand { get; set; }
 
         //Lista de redes de negocios disponibles para envio masivo de notificaciones
         readonly public List<string> redesNegocio = new List<string>();
@@ -31,11 +35,13 @@ namespace SoporteCL.ViewModels
         public NotificacionesViewModel()
         {
             Title = "Notificaciones recibidas";
-            Notifs = new ObservableCollection<Notificacion>();
-            total = 0;
+            Notifs = new ObservableRangeCollection<Notificacion>();
+            //total = 0;
 
             //Se crea un comando que ejecuta el metodo asincrono de recarga
             LoadNotifsCommand = new Command(async () => await ExecuteLoadNotifs());
+
+            DeleteNotifsCommand = new Command<Notificacion>(DeleteNotif);
 
             //TODO: Reemplazar con nueva operacion en la base de datos para obtener todas las redes de negocios
             redesNegocio.Add("DI");
@@ -53,10 +59,11 @@ namespace SoporteCL.ViewModels
                 {
                     case "Usuario": //Si target es un solo usuario, se crea la nueva notificacion y se añade a la lista del ViewModel
                         var newNotif = notif as Notificacion;
-                        newNotif.Id = total;
+                      //  newNotif.Id = total;
                         Notifs.Add(newNotif);
                         await NotifStore.AddNotificacionAsync(newNotif);
-                        total++;
+                        Debug.WriteLine("New notification ID: {0}", newNotif.Id);
+                       // total++;
                         break;
                     case "RedNegocio": //Si target es Red de Negocio, se creara una notificacion por cada red de negocio de nivel inferior, incluyendo la propia
                         //TODO: cuando base de datos este conectada, crear nueva operacion para obtener todos los usuarios de una red de negocio e inferiores y enviar una notificacion nueva a todos
@@ -64,14 +71,14 @@ namespace SoporteCL.ViewModels
                         for (int i = 0; i <= RN; i++)
                         {
                             Notificacion notifRed = new Notificacion(notif);
-                            notifRed.Id = total;
+                            //notifRed.Id = total;
                             foreach (var item in redesNegocio)
                             {
                                 if (redesNegocio.IndexOf(item) == i) notifRed.Destino = item;
                             }
                             Notifs.Add(notifRed);
                             await NotifStore.AddNotificacionAsync(notifRed);
-                            total++;
+                            //total++;
                         }
                         break;
                 }
@@ -98,13 +105,18 @@ namespace SoporteCL.ViewModels
                 int index = Notifs.IndexOf(updateNotif);
                 updateNotif.Leido = 1;
                 Notifs[index].Leido = 1;
-                updateNotif.Visible = false;
-                Notifs[index].Visible = false;
+                updateNotif.Visible = 0;
+                Notifs[index].Visible = 0;
                 await NotifStore.UpdateNotificacionAsync(updateNotif);
                 //Se ejecuta comando de recarga
                 LoadNotifsCommand.Execute(null);
             });
 
+        }
+
+        private void DeleteNotif(Notificacion obj)
+        {
+            throw new NotImplementedException();
         }
 
         //Metodo asincrono para recargar la pagina. Cuando el hilo no este ocupado, se vaciara la lista del ViewModel y se volveran a cargar en ella las Notificaciones de la base de datos
@@ -122,7 +134,7 @@ namespace SoporteCL.ViewModels
                 Notifs.Clear();
                 foreach (var n in notificaciones)
                     {
-                        n.Visible = n.Leido == 0; //TODO: eliminar esta linea de codigo
+                        n.Visible = (n.Leido == 0) ? 1:0; //TODO: eliminar esta linea de codigo
                         Notifs.Add(n);
                     }
             }

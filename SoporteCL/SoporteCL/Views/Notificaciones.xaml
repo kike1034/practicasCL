@@ -50,7 +50,7 @@
                                 <Label Text="{Binding Asunto}"
                                         LineBreakMode="WordWrap" FontAttributes="Bold"
                                         Style="{DynamicResource ListItemTextStyle}" 
-                                        FontSize="20" />
+                                        FontSize="20"/>
                                 <!--Etiqueta que muestra el usuario destino de la notificacion-->
                                 <Label Text="{Binding Destino}" 
                                         LineBreakMode="NoWrap" 

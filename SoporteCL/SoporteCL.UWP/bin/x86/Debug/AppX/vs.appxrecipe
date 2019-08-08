@@ -100,7 +100,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\bin\Debug\netstandard2.0\SoporteCL.dll">
       <PackagePath>SoporteCL.dll</PackagePath>
-      <Modified>2019-08-08T12:37:04.255</Modified>
+      <Modified>2019-08-08T12:44:58.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>

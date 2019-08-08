@@ -24,7 +24,7 @@ namespace SoporteCL.Views
         {
             InitializeComponent();
             //El contexto del binding se asigna al ViewModel para acceder a la lista de notificaciones y comando de recarga
-            BindingContext = notifViewModel = new NotificacionesViewModel();
+            BindingContext = notifViewModel = new TodasViewModel();
             
         }
 
@@ -40,35 +40,36 @@ namespace SoporteCL.Views
         {
             base.OnAppearing();
             //Se ejecuta el comando de carga de datos del ViewModel cuando se muestre la vista
-            notifViewModel.LoadNotifsCommand.Execute(null);
+            if (notifViewModel.Notifs.Count==0)
+                notifViewModel.LoadNotifsCommand.Execute(null);
         }
 
         //Metodo Listener que se ejecuta cuando se presiona el boton para eliminar una notificacion de la lista.
-        private void BotonBorrar_Clicked(object sender, EventArgs e)
+        /*private void BotonBorrar_Clicked(object sender, EventArgs e)
         {
             ImageButton button = (ImageButton)sender;
-            int ID = (int)button.CommandParameter;
-
+            Notificacion notif= (Notificacion)button.CommandParameter;
+            notifViewModel.DeleteNotifsCommand.Execute(notif);
             //Se envia un mensaje al MessagingCenter del ViewModel para ejecutar los cambios. Se incluye el ID recibido por comando.
-            MessagingCenter.Send(this, "DeleteNotificacion", ID);
-        }
+            //MessagingCenter.Send(this, "DeleteNotificacion", ID);
+        }*/
 
         //Metodo Listener que se ejecuta cuando se desliza una notificacion de la lista para borrarla.
-        private void Delete_Swiped(object sender, SwipedEventArgs e)
+       /* private void Delete_Swiped(object sender, SwipedEventArgs e)
         {
             var swipped = (SwipeGestureRecognizer)((StackLayout)sender).GestureRecognizers[0];
-            int ID = (int)swipped.CommandParameter;
-
+            Notificacion notif = (Notificacion)swipped.CommandParameter;
+            notifViewModel.DeleteNotifsCommand.Execute(notif);
             //Se envia un mensaje al MessagingCenter del ViewModel para ejecutar los cambios. Se incluye el ID recibido por comando.
-            MessagingCenter.Send(this, "DeleteNotificacion", ID);
-        }
+           // MessagingCenter.Send(this, "DeleteNotificacion", ID);
+        }*/
 
         //Metodo Listener que se ejecuta cuando se presiona una notificacion de la lista para marcala como leida.
-        private void MarkAsRead_Tapped(object sender, EventArgs e)
+        /*private void MarkAsRead_Tapped(object sender, EventArgs e)
         {
             var layout = (StackLayout)sender;
             var notif = (Notificacion)layout.Children[0].BindingContext;
-            var ID = (int)((TapGestureRecognizer)layout.GestureRecognizers[1]).CommandParameter;
+            var ID = (string)((TapGestureRecognizer)layout.GestureRecognizers[1]).CommandParameter;
             //var mark = (Image)layout.Children[0];
 
             //Buscar notificacion mediante el ID proporcionado para comprobar que se encuentra en la lista y coincide
@@ -81,6 +82,6 @@ namespace SoporteCL.Views
                 MessagingCenter.Send(this, "MarkAsReadNotificacion", notif);
                 //mark.IsVisible = false;
             }
-        }
+        }*/
     }
 }

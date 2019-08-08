@@ -60,6 +60,11 @@ namespace SoporteCL.Services
                 .FirstOrDefaultAsync();
         }
 
+        public async Task<Notificacion> GetNotificacionAsync(Notificacion notif)
+        {
+            return await _platform.GetConnectionAsync().GetAsync<Notificacion>(notif);
+        }
+
         public async Task<bool> UpdateNotificacionAsync(Notificacion notificacion)
         {
             return (await _platform.GetConnectionAsync().UpdateAsync(notificacion)) > 0;

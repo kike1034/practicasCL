@@ -17,7 +17,7 @@ namespace SoporteCL.Models
         public string Fuente { get { return fuente; } set { SetProperty(ref fuente, value); } }
         //Usuario que recibira la Notificacion
         string destino;
-        public string Destino { get { return destino; } set { SetProperty(ref destino, value); }; }
+        public string Destino { get { return destino; } set { SetProperty(ref destino, value); }}
         //Parametro que indica si se enviará la notificacion a un solo usuario o a todos los de una red de negocio
         string tipoTarget;
         public string TipoTarget { get { return tipoTarget; } set { SetProperty(ref tipoTarget, value); } }
@@ -25,7 +25,6 @@ namespace SoporteCL.Models
         string contenido;
         public string Contenido { get { return contenido; } set { SetProperty(ref contenido, value); } }
         //Parametro que indica si la Notificacion ha sido leida o no
-        //TODO: configurar codigo para utilizarlo para su control en la interfaz (icono de leido en vista Notificaciones)
         int leido;
         public int Leido { get { return leido; } set { SetProperty(ref leido, value); } }
 

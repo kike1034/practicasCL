@@ -17,7 +17,6 @@ namespace SoporteCL.ViewModels
     public class BaseViewModel : ObservableObject
     {
         //Base de datos simulada de Notificaciones
-        //TODO: reemplazar base de datos simulada por conexion a base de datos (eliminar este parametro)
         public INotificationStore<Notificacion> NotifStore => DependencyService.Get<INotificationStore<Notificacion>>();
 
         bool isBusy = false;

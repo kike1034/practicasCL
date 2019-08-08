@@ -20,7 +20,7 @@ namespace SoporteCL
             InitializeComponent();
 
             //Añadir base de datos simulada al servicio de dependencias para responder a cambios sobre los datos.
-            DependencyService.Register<MockNotificationStore>();
+            //DependencyService.Register<MockNotificationStore>();
             MainPage = new MainPage();
         }
 

@@ -64,3 +64,4 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\obj\iPhone\Debug\
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\obj\iPhone\Debug\SoporteCL.iOS.csproj.CopyComplete
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\obj\iPhone\Debug\SoporteCL.iOS.exe
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\obj\iPhone\Debug\SoporteCL.iOS.pdb
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\SoporteCL.dll.mdb

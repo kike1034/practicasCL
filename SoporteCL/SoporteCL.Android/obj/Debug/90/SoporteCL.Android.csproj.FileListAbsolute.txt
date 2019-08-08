@@ -558,3 +558,4 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\src\md513d0258903c37fed2a3d17a14e8551a2\AwaitableResultCallback_1.java
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\src\md513d0258903c37fed2a3d17a14e8551a2\ResultCallback_1.java
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\SoporteCL.dll.mdb

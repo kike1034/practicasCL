@@ -31,8 +31,8 @@ namespace SoporteCL.Views
         protected override void OnAppearing()
         {
             //Se ejecuta el comando de carga de datos del ViewModel cuando se muestre la vista
-            if (notifViewModel.Notifs.Count == 0)
-                notifViewModel.LoadNotifsCommand.Execute(null);
+            base.OnAppearing();
+            notifViewModel.LoadNotifsCommand.Execute(null);
         }
 
         /*private async void NuevaNotificacion_Clicked(object sender, EventArgs e)

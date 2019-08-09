@@ -39,9 +39,7 @@ namespace SoporteCL.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            //Se ejecuta el comando de carga de datos del ViewModel cuando se muestre la vista
-            if (notifViewModel.Notifs.Count==0)
-                notifViewModel.LoadNotifsCommand.Execute(null);
+            notifViewModel.LoadNotifsCommand.Execute(null);
         }
 
         //Metodo Listener que se ejecuta cuando se presiona el boton para eliminar una notificacion de la lista.

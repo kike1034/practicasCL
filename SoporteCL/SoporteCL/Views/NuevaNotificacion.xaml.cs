@@ -23,9 +23,11 @@ namespace SoporteCL.Views
             InitializeComponent();
 
             //Crear nueva Notificacion e inicializarla
-            Notificacion = new Notificacion();
-            Notificacion.TipoTarget = "Usuario";
-            Notificacion.Leido = 0;
+            Notificacion = new Notificacion
+            {
+                TipoTarget = "Usuario",
+                Leido = 0
+            };
             //Notificacion.Visible = 1;
 
             //La propia vista es el contexto del que se usuaran los datos por Binding

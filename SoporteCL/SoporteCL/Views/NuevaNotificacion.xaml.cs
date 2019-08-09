@@ -28,7 +28,6 @@ namespace SoporteCL.Views
                 TipoTarget = "Usuario",
                 Leido = 0
             };
-            //Notificacion.Visible = 1;
 
             //La propia vista es el contexto del que se usuaran los datos por Binding
             BindingContext = this;

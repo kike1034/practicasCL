@@ -10,12 +10,12 @@ using System.IO;
  */
 namespace SoporteCL
 {
-    public partial class App : Application
+    public partial class Application : Xamarin.Forms.Application
     {
         
         //public static NotificacionesDatabase database;
 
-        public App()
+        public Application()
         {
             InitializeComponent();
 

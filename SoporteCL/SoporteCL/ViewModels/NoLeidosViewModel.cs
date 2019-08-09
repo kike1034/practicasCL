@@ -35,7 +35,7 @@ namespace SoporteCL.ViewModels
                 MessagingCenter.Send(new MessagingCenterAlert
                 {
                     Title = "Error",
-                    Message = "Unable to load items.",
+                    Message = "Unable to load unread notifs",
                     Cancel = "OK"
                 }, "message");
             }

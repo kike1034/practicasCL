@@ -1,5 +1,7 @@
-﻿using SQLite;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using SQLite;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 /*
  *  Clase Modelo para el objeto Notificacion que se mostrara en las vistas y almacenará en la base de datos
@@ -16,6 +18,7 @@ namespace SoporteCL.Models
         string fuente;
         public string Fuente { get { return fuente; } set { SetProperty(ref fuente, value); } }
         //Usuario que recibira la Notificacion
+       // [ForeignKey(typeof(Profile)]
         string destino;
         public string Destino { get { return destino; } set { SetProperty(ref destino, value); }}
         //Parametro que indica si se enviará la notificacion a un solo usuario o a todos los de una red de negocio

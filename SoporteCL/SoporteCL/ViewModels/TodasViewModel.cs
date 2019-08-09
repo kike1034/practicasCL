@@ -73,7 +73,7 @@ namespace SoporteCL.ViewModels
                 MessagingCenter.Send(new MessagingCenterAlert
                 {
                     Title = "Error",
-                    Message = "Unable to load items.",
+                    Message = "Unable to load notifs",
                     Cancel = "OK"
                 }, "message");
             }

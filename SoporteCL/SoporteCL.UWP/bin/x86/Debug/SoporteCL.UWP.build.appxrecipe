@@ -28,12 +28,6 @@
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\SoporteCL.UWP.exe">
       <PackagePath>entrypoint\SoporteCL.UWP.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\entityframework\6.2.0\lib\net45\EntityFramework.SqlServer.dll">
-      <PackagePath>EntityFramework.SqlServer.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\entityframework\6.2.0\lib\net45\EntityFramework.dll">
-      <PackagePath>EntityFramework.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\microsoft.entityframeworkcore\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
     </AppxPackagedFile>
@@ -138,6 +132,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\cancel.png">
       <PackagePath>cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\cllogo.png">
+      <PackagePath>cllogo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\delete.png">
       <PackagePath>delete.png</PackagePath>

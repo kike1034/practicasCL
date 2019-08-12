@@ -21,5 +21,9 @@ namespace SoporteCL.Views
             //Deshabilitar la navegacion entre etiquetas mediante deslizamiento (Swipe) para Android
             this.On<Xamarin.Forms.PlatformConfiguration.Android>().SetIsSwipePagingEnabled(false);
         }
+        void BtnLogoutClicked(object sender, EventArgs e)
+        {
+            Application.Current.Logout();
+        }
     }
 }

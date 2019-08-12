@@ -606,4 +606,4 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\System.Memory.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\System.ObjectModel.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\bin\Debug\SoporteCL.dll.mdb
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\res\drawable\cllogo.png

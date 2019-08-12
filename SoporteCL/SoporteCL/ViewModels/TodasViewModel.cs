@@ -19,7 +19,6 @@ namespace SoporteCL.ViewModels
             redesNegocio.Add("DA");
             redesNegocio.Add("DR");
             redesNegocio.Add("DN");
-
             MessagingCenter.Subscribe<NuevaNotificacion, Notificacion>(this, "AddNotificacion", async (obj, notif) =>
             {
 

@@ -1,6 +1,7 @@
 ﻿using SoporteCL.Helpers;
 using SoporteCL.Models;
 using SoporteCL.Services;
+using SoporteCL.Views;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,16 +11,14 @@ using Xamarin.Forms;
 
 namespace SoporteCL.ViewModels
 {
-    public class LoginViewModel : ObservableObject
+    public class LoginViewModel : ObservableObject//: CarouselPage
     {
-        public IProfileStore<Profile> ProfileStore => DependencyService.Get<IProfileStore<Profile>>();
+        //readonly ContentPage login;
+        public IProfileStore<Profile> ProfilStore => DependencyService.Get<IProfileStore<Profile>>();
 
-        string title = "Login";
-        public string Title
-        {
-            get { return title; }
-            set { SetProperty(ref title, value); }
-        }
+        public ObservableRangeCollection<Profile> Profiles { get; set; }
+
+        public Command LoadProfilesCommand { get; set; }
 
         bool isBusy = false;
         public bool IsBusy
@@ -27,37 +26,26 @@ namespace SoporteCL.ViewModels
             get { return isBusy; }
             set { SetProperty(ref isBusy, value); }
         }
-        //Lista de profiles
-        public ObservableRangeCollection<Profile> Profiles { get; set; }
 
-        //Comando que permite hacer el login
-        public Command LoginCommand { get; set; }
-
-        //Comando que permite hacer el logout
-        public Command LogoutCommand { get; set; }
-
-        public Command LoadProfilesCommand { get; set; }
-
-        public LoginViewModel()
+        //Titulo de la vista, mostrado en la barra de herramientas
+        string title = "Login";
+        public string Title
         {
+            get { return title; }
+            set { SetProperty(ref title, value); }
+        }
+        public LoginViewModel()/*ILoginManager ilm*/
+        {
+            /*login = new LoginPage(ilm);
+            this.Children.Add(login);
+            MessagingCenter.Subscribe<ContentPage>(this, "Login", (sender) =>
+            {
+                this.SelectedItem = login;
+            });*/
             Profiles = new ObservableRangeCollection<Profile>();
-
-            LoadProfilesCommand = new Command(async () => await ExecuteLoadProfiles());
-
-            LoginCommand = new Command<Profile>(Login);
-
-            LogoutCommand = new Command(Logout);
-        }
-
-        private void Logout()
-        {
-            Application.Current.Properties["IsLoggedIn"] = false;
-        }
-
-        private void Login(Profile profile)
-        {
-            Application.Current.Properties["IsLoggedIn"] = true;
-            Application.Current.Properties["name"] = profile;
+            LoadProfilesCommand=new Command(async () => await ExecuteLoadProfiles());
+           /* var profiles=ProfilStore.NumberofProfilesAsync();
+            Debug.WriteLine("hola {0}",profiles);*/
         }
 
         private async Task ExecuteLoadProfiles()
@@ -70,8 +58,8 @@ namespace SoporteCL.ViewModels
             try
             {
                 Profiles.Clear();
-                var profiles = await ProfileStore.GetAllProfileAsync();
-                Profiles.ReplaceRange(profiles);
+                var perfiles = await ProfilStore.GetAllProfileAsync();
+                Profiles.ReplaceRange(perfiles);
             }
             catch (Exception ex)
             {

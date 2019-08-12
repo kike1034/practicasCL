@@ -1,6 +1,7 @@
 ﻿using SoporteCL.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -68,7 +69,52 @@ namespace SoporteCL.Services
             _platform = DependencyService.Get<ISQLitePlatform>();
             var con = _platform.GetConnection();
             con.CreateTable<Profile>();
-            con.Close();
+            if (con.Table<Profile>().Count() == 0)
+            {
+                Profile clay = new Profile
+                {
+                    Nombre = "CristianLay",
+                    Jerarquia = 7
+                };
+                con.Insert(clay);
+                Profile DN = new Profile
+                {
+                    Nombre = "DN",
+                    Jerarquia = 6
+                };
+                con.Insert(DN);
+                Profile DR = new Profile
+                {
+                    Nombre = "DR",
+                    Jerarquia = 5
+                };
+                con.Insert(DR);
+                Profile DA = new Profile
+                {
+                    Nombre = "DA",
+                    Jerarquia = 4
+                };
+                con.Insert(DA);
+                Profile SU = new Profile
+                {
+                    Nombre = "SU",
+                    Jerarquia = 3
+                };
+                con.Insert(SU);
+                Profile JG = new Profile
+                {
+                    Nombre = "JG",
+                    Jerarquia = 2
+                };
+                con.Insert(JG);
+                Profile DI = new Profile
+                {
+                    Nombre = "DI",
+                    Jerarquia = 1
+                };
+                con.Insert(DI);
+            }
+                con.Close();
         }
         public async Task<bool> AddProfileAsync(Profile profile)
         {
@@ -106,6 +152,11 @@ namespace SoporteCL.Services
         public async Task<bool> UpdateProfileAsync(Profile profile)
         {
             return (await _platform.GetConnectionAsync().UpdateAsync(profile)) > 0;
+        }
+
+        public async Task<int> NumberofProfilesAsync()
+        {
+            return await _platform.GetConnectionAsync().Table<Profile>().CountAsync();
         }
     }
 }

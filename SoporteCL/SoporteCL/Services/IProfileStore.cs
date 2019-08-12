@@ -21,6 +21,8 @@ namespace SoporteCL.Services
         //Metodo que busca y devuelve un Perfil con todas las Profilees de la base de datos
         Task<T> GetProfileAsync(T profile);
         Task<IEnumerable<T>> GetAllProfileAsync();
+
+        Task<int> NumberofProfilesAsync();
     }
 }
 

@@ -14,4 +14,4 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\NotificacionesNoLeidas.xaml.g.cs
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\NuevaNotificacion.xaml.g.cs
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\SoporteCL.csprojAssemblyReference.cache
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs

@@ -2,9 +2,6 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "EntityFramework/6.2.0": {
-        "type": "package"
-      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -458,7 +455,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "EntityFramework": "6.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
@@ -474,9 +470,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "EntityFramework/6.2.0": {
-        "type": "package"
-      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -930,7 +923,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "EntityFramework": "6.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
@@ -946,9 +938,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "EntityFramework/6.2.0": {
-        "type": "package"
-      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -1402,7 +1391,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "EntityFramework": "6.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
@@ -1418,9 +1406,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "EntityFramework/6.2.0": {
-        "type": "package"
-      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -1874,7 +1859,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "EntityFramework": "6.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
@@ -1891,36 +1875,6 @@
     }
   },
   "libraries": {
-    "EntityFramework/6.2.0": {
-      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
-      "type": "package",
-      "path": "entityframework/6.2.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/net40/App.config.transform",
-        "content/net40/Web.config.transform",
-        "entityframework.6.2.0.nupkg.sha512",
-        "entityframework.nuspec",
-        "lib/net40/EntityFramework.SqlServer.dll",
-        "lib/net40/EntityFramework.SqlServer.xml",
-        "lib/net40/EntityFramework.dll",
-        "lib/net40/EntityFramework.xml",
-        "lib/net45/EntityFramework.SqlServer.dll",
-        "lib/net45/EntityFramework.SqlServer.xml",
-        "lib/net45/EntityFramework.dll",
-        "lib/net45/EntityFramework.xml",
-        "tools/EntityFramework.PowerShell.Utility.dll",
-        "tools/EntityFramework.PowerShell.dll",
-        "tools/EntityFramework.psd1",
-        "tools/EntityFramework.psm1",
-        "tools/about_EntityFramework.help.txt",
-        "tools/init.ps1",
-        "tools/install.ps1",
-        "tools/migrate.exe"
-      ]
-    },
     "Microsoft.EntityFrameworkCore/2.2.6": {
       "sha512": "vmrMrjiCO7FkuFJwt/MHl6pk6cSXPtB1miPMtn0KTO7WqwaQ2WQ4gWpC/m753PzVriH2X2kIadWrd9SJb7KVww==",
       "type": "package",
@@ -2914,43 +2868,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "El paquete EntityFramework 6.2.0 no es compatible con xamarinios10 (Xamarin.iOS,Version=v1.0). El paquete EntityFramework 6.2.0 admite:\r\n  - net40 (.NETFramework,Version=v4.0)\r\n  - net45 (.NETFramework,Version=v4.5)",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "El paquete EntityFramework 6.2.0 no es compatible con xamarinios10 (Xamarin.iOS,Version=v1.0) / win. El paquete EntityFramework 6.2.0 admite:\r\n  - net40 (.NETFramework,Version=v4.0)\r\n  - net45 (.NETFramework,Version=v4.5)",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "El paquete EntityFramework 6.2.0 no es compatible con xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x64. El paquete EntityFramework 6.2.0 admite:\r\n  - net40 (.NETFramework,Version=v4.0)\r\n  - net45 (.NETFramework,Version=v4.5)",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win-x64"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "El paquete EntityFramework 6.2.0 no es compatible con xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x86. El paquete EntityFramework 6.2.0 admite:\r\n  - net40 (.NETFramework,Version=v4.0)\r\n  - net45 (.NETFramework,Version=v4.5)",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  }
 }

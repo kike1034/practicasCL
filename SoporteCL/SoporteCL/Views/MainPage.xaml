@@ -7,6 +7,9 @@
             xmlns:views="clr-namespace:SoporteCL.Views"
             x:Class="SoporteCL.Views.MainPage">
 
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Cerrar Sesion" Clicked="BtnLogoutClicked" />
+    </TabbedPage.ToolbarItems>
     <!-- Pagina principal etiquetada. Sus hijos corresponden a las etiquetas a las que se navegaran. 
     Se incluyen como contenido la vista y, para ioS, un icono para la etiqueta -->
     <TabbedPage.Children>

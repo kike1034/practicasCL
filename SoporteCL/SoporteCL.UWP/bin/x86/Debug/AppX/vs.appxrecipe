@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-08-12T12:48:31.346</Modified>
+      <Modified>2019-08-13T13:09:37.902</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\SoporteCL.UWP.exe">
       <PackagePath>entrypoint\SoporteCL.UWP.exe</PackagePath>
-      <Modified>2019-08-12T12:48:30.420</Modified>
+      <Modified>2019-08-13T13:09:36.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\microsoft.entityframeworkcore\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
@@ -160,7 +160,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL\bin\Debug\netstandard2.0\SoporteCL.dll">
       <PackagePath>SoporteCL.dll</PackagePath>
-      <Modified>2019-08-12T12:53:39.277</Modified>
+      <Modified>2019-08-13T13:09:30.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -343,11 +343,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-08-12T12:48:30.244</Modified>
+      <Modified>2019-08-13T13:09:36.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-08-12T12:48:30.245</Modified>
+      <Modified>2019-08-13T13:09:36.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -359,11 +359,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-08-12T12:11:01.230</Modified>
+      <Modified>2019-08-13T08:47:35.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Core\SoporteCL.UWP.exe">
       <PackagePath>SoporteCL.UWP.exe</PackagePath>
-      <Modified>2019-08-12T12:48:31.339</Modified>
+      <Modified>2019-08-13T13:09:37.897</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

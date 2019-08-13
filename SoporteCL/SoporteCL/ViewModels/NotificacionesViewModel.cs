@@ -27,9 +27,6 @@ namespace SoporteCL.ViewModels
         
         public Command ReadNotifsCommand { get; set; }
 
-        //Lista de redes de negocios disponibles para envio masivo de notificaciones
-        readonly public List<string> redesNegocio = new List<string>();
-
         public NotificacionesViewModel()
         {
             Notifs = new ObservableRangeCollection<Notificacion>();

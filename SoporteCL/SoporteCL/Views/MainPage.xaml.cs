@@ -23,7 +23,7 @@ namespace SoporteCL.Views
         }
         void BtnLogoutClicked(object sender, EventArgs e)
         {
-            Application.Current.Logout();
+            App.Current.Logout();
         }
     }
 }

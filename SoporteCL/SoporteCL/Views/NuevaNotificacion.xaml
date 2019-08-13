@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              x:Class="SoporteCL.Views.NuevaNotificacion"
+             mc:Ignorable="d"
              Title="Nueva Notificacion">
 
     <!--Vista que proporciona el formulario para crear una nueva notificacion.-->
@@ -27,8 +28,14 @@
             Cuando se elige una opcion del Picker, se activa un Listener (SelectedIndexChanged) que asigna la opcion elegida como Destino de la Notificacion-->
             <Grid>
                 <Entry x:Name="destinoNotificacionPersona" Text="{Binding Notificacion.Destino}" Placeholder="Usuario o telefono..." FontSize="Medium"/>
-                <Picker x:Name="destinoNotificacionRedNegocio" Title="Red de negocio..."  Grid.Column="1" IsEnabled="false" SelectedIndexChanged="RedNegocioSeleccionada">
-                    <!--TODO: Una vez se tenga conexion a la base de datos, cambiar el ItemsSource para que tome las RN de una de las tablas (previamente obtenerlas en el codigo en forma de lista)-->
+                <Picker IsEnabled="false" 
+                    x:Name="destinoNotificacionRedNegocio"
+                    ItemsSource="{Binding RedNegocios}"
+                    ItemDisplayBinding="{Binding Nombre}"
+                    Grid.Column="1"
+                    SelectedIndexChanged="RedNegocioSeleccionada"/>
+                <!--<Picker x:Name="destinoNotificacionRedNegocio" Title="Red de negocio..."  Grid.Column="1" IsEnabled="false" SelectedIndexChanged="RedNegocioSeleccionada">
+                    
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>DI</x:String>
@@ -39,7 +46,7 @@
                             <x:String>DN</x:String>
                         </x:Array>
                     </Picker.ItemsSource>
-                </Picker>
+                </Picker> -->
             </Grid>
             
             <!--Entrada de texto para el Contenido de la Notificacion-->

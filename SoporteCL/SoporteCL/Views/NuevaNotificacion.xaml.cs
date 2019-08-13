@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SoporteCL.Helpers;
 using SoporteCL.Models;
+using SoporteCL.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,6 +21,10 @@ namespace SoporteCL.Views
         //Notificacion nueva
         public Notificacion Notificacion { get; set; }
 
+        public IProfileStore<Profile> ProfilStore => DependencyService.Get<IProfileStore<Profile>>();
+
+        public ObservableRangeCollection<Profile> RedNegocios { get; set; }
+
         public NuevaNotificacion()
         {
             InitializeComponent();
@@ -28,11 +35,43 @@ namespace SoporteCL.Views
                 TipoTarget = "Usuario",
                 Leido = 0
             };
-
             //La propia vista es el contexto del que se usuaran los datos por Binding
+            RedNegocios = new ObservableRangeCollection<Profile>();
+            //Cargar la lista de redes de negocios a las que puede enviar mensajes cuando se cree la pagina.
+            LoadRedToSend();
             BindingContext = this;
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+        }
+        //Obtiene la lista de redes de negocios de la base de datos (perfiles con jerarquía < que la red de negocios con la que esta logueados)
+        private async void LoadRedToSend()
+        {
+            try
+            {
+                if (App.Current.Properties.ContainsKey("name")){ 
+                    Profile perfillogged = (Profile)App.Current.Properties["name"];
+                    var perfiles= await ProfilStore.GetAllProfileAsync();
+                    RedNegocios.Clear();
+                    foreach(Profile perfil in perfiles)
+                    {
+                        if (perfil.Jerarquia < perfillogged.Jerarquia) RedNegocios.Add(perfil);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                MessagingCenter.Send(new MessagingCenterAlert
+                {
+                    Title = "Error",
+                    Message = "Unable to load red de negocios",
+                    Cancel = "OK"
+                }, "message");
+            }
+        }
         //Metodo Listener que se ejecuta cuando se presiona el boton para crear y enviar la nueva Notificacion
         private async void Enviar_Clicked(object sender, EventArgs e)
         {
@@ -46,6 +85,7 @@ namespace SoporteCL.Views
         //Metodo Listener que se ejecuta cuando se presiona el boton para cancelar la Notificacion
         private async void Cancelar_Clicked(object sender, EventArgs e)
         {
+            Debug.WriteLine(RedNegocios.Count);
             //PopAsync quita la vista de la cima de la pila de navegacion, volviendo a la pantalla anterior, al igual que al presionar el boton Atras.
             await Navigation.PopAsync();
         }
@@ -76,7 +116,8 @@ namespace SoporteCL.Views
         private void RedNegocioSeleccionada(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
-            Notificacion.Destino = (string)picker.SelectedItem;
+            Profile destino = (Profile)picker.SelectedItem;
+            Notificacion.Destino = destino.Nombre;
         }
     }
 }

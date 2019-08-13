@@ -2,6 +2,7 @@
 using SoporteCL.Models;
 using SoporteCL.Views;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -10,6 +11,8 @@ namespace SoporteCL.ViewModels
 {
     class TodasViewModel : NotificacionesViewModel
     {
+        //Lista de redes de negocios disponibles para envio masivo de notificaciones
+        readonly public List<string> redesNegocio = new List<string>();
         public TodasViewModel()
         {
             Title = "Notificaciones recibidas";

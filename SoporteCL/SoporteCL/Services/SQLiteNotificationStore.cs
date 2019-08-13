@@ -70,5 +70,29 @@ namespace SoporteCL.Services
         {
             return (await _platform.GetConnectionAsync().UpdateAsync(notificacion)) > 0;
         }
+
+        public async Task<IEnumerable<Notificacion>> GetAllUnreadNotificacionesProfileAsync(string nombreperfil)
+        {
+            return await _platform.GetConnectionAsync()
+                .Table<Notificacion>().Where(x => x.Destino == nombreperfil && x.TipoTarget == "RedNegocio" && x.Leido == 0).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Notificacion>> GetAllNotificacionesProfileAsync(string nombreperfil)
+        {
+            return await _platform.GetConnectionAsync()
+                .Table<Notificacion>().Where(x => x.Destino == nombreperfil && x.TipoTarget == "RedNegocio").ToListAsync();
+        }
+
+        public async Task<IEnumerable<Notificacion>> GetAllUnreadNotificacionesUserAsync(string user)
+        {
+            return await _platform.GetConnectionAsync()
+                 .Table<Notificacion>().Where(x => x.Destino == user && x.TipoTarget == "Usuario" && x.Leido == 0).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Notificacion>> GetAllNotificacionesUserAsync(string user)
+        {
+            return await _platform.GetConnectionAsync()
+                .Table<Notificacion>().Where(x => x.Destino == user && x.TipoTarget == "Usuario").ToListAsync();
+        }
     }
 }

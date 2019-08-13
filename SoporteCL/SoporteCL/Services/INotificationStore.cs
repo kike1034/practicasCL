@@ -25,5 +25,13 @@ namespace SoporteCL.Services
         Task<IEnumerable<T>> GetAllNotificacionesAsync();
         //Metodo que busca y devuelve una lista con todas las Notificaciones que no han sido leidas de la base de datos
         Task<IEnumerable<T>> GetAllUnreadNotificacionesAsync();
+        //Método que busca y devuelve una lista con todas las Notificaciones no leidas que tengan como target red de negocios y destino un determinado perfil.
+        Task<IEnumerable<T>> GetAllUnreadNotificacionesProfileAsync(string nombreperfil);
+        //Método que busca y devuelve una lista con todas las Notificaciones que tengan como target red de negocios y destino un determinado perfil.
+        Task<IEnumerable<T>> GetAllNotificacionesProfileAsync(string nombreperfil);
+        //Método que busca y devuelve una lista con todas las Notificaciones no leidas que tengan como destino un user
+        Task<IEnumerable<T>> GetAllUnreadNotificacionesUserAsync(string user);
+        //Método que busca y devuelve una lista con todas las Notificaciones que tengan como destino un user
+        Task<IEnumerable<T>> GetAllNotificacionesUserAsync(string user);
     }
 }

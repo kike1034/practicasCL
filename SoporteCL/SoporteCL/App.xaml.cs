@@ -10,33 +10,40 @@ using SoporteCL.Login;
  */
 namespace SoporteCL
 {
-    public partial class Application : Xamarin.Forms.Application, ILoginManager
+    public partial class App : Xamarin.Forms.Application, ILoginManager
     {
 
         //public static NotificacionesDatabase database;
-        public new static Application Current;
-        public Application()
+        public new static App Current;
+
+        private MainPage main;
+        public App()
         {
             InitializeComponent();
             Current = this;
             var isLoggedIn = Properties.ContainsKey("IsLoggedIn") ? (bool)Properties["IsLoggedIn"] : false;
-            if (isLoggedIn) MainPage = new MainPage();
-            else MainPage = new LoginPage(this);
-            //Añadir base de datos simulada al servicio de dependencias para responder a cambios sobre los datos.
-            //DependencyService.Register<MockNotificationStore>();
-
-            
+            if (isLoggedIn)
+            {
+                if (main == null) MainPage = main = new MainPage();
+                else MainPage = main;
+            }
+            else
+            {
+                MainPage = new LoginPage(this);
+            }           
         }
 
         public void Logout()
         {
-            Application.Current.Properties["IsLoggedIn"] = false;
+            Properties["IsLoggedIn"] = false;
+            Properties.Remove("name");
             MainPage = new LoginPage(this);
         }
 
         public void ShowMainPage()
-        {
-            MainPage = new MainPage();
+        {       
+            if (main == null) MainPage = main = new MainPage();
+            else MainPage = main;
         }
        
 

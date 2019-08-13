@@ -28,9 +28,6 @@ namespace SoporteCL.Views
         {
             InitializeComponent();
             this.iml = iml;
-            MessagingCenter.Subscribe<ContentPage>(this, "Login", (sender) =>
-            {
-            });
             BindingContext = loginviewmodel = new LoginViewModel();
         }
         /* void async perfileslist()
@@ -52,8 +49,9 @@ namespace SoporteCL.Views
         }
         void BtnLoginClicked(object sender, EventArgs e)
         {
-            Application.Current.Properties["name"] = perfil;
-            Application.Current.Properties["IsLoggedIn"] = true;
+            App.Current.Properties["name"] = perfil;
+            App.Current.Properties["IsLoggedIn"] = true;
+           // MessagingCenter.Unsubscribe<ContentPage>(this, "Login");
             iml.ShowMainPage();
         }
     }

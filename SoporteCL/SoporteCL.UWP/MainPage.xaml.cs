@@ -22,7 +22,7 @@ namespace SoporteCL.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new SoporteCL.Application());
+            LoadApplication(new SoporteCL.App());
         }
     }
 }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "794347157754",
+    "firebase_url": "https://soportecl-b0939.firebaseio.com",
+    "project_id": "soportecl-b0939",
+    "storage_bucket": "soportecl-b0939.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794347157754:android:16a6a04d9417fbbc",
+        "android_client_info": {
+          "package_name": "com.companyname.SoporteCL"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794347157754-lu1bt0njkgtl7d8tvhpt4imt3a8id1qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEqUEaOAU71pQGG9QNMFPz07rN8LgdPWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794347157754-lu1bt0njkgtl7d8tvhpt4imt3a8id1qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

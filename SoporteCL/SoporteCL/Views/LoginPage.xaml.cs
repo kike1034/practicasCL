@@ -3,6 +3,7 @@ using SoporteCL.Login;
 using SoporteCL.Models;
 using SoporteCL.Services;
 using SoporteCL.ViewModels;
+using SoporteCL.ViewModels.Login;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,32 +16,27 @@ using Xamarin.Forms.Xaml;
 
 namespace SoporteCL.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]  
+    //[XamlCompilation(XamlCompilationOptions.Compile)]  
     public partial class LoginPage : ContentPage
     {
         /*  private  IProfileStore<Profile> ProfileStore => DependencyService.Get<IProfileStore<Profile>>();
           private ObservableRangeCollection<Profile> perfiles;*/
-        public LoginViewModel loginviewmodel;
+        LoginViewModel loginviewmodel;
         public ILoginManager iml;
-
-        private Profile perfil;
         public LoginPage(ILoginManager iml)
         {
             InitializeComponent();
-            this.iml = iml;
-            BindingContext = loginviewmodel = new LoginViewModel();
+           /* this.iml = iml;
+            BindingContext = loginviewmodel = new LoginViewModel();*/
         }
-        /* void async perfileslist()
-         {
-             var profiles = await ProfileStore.GetAllProfileAsync();
-             perfiles.AddRange(profiles);
-         }*/
         protected override void OnAppearing()
         {
-            base.OnAppearing();
-            loginviewmodel.LoadProfilesCommand.Execute(null);
+            //base.OnAppearing();
+            // loginviewmodel.LoadProfilesCommand.Execute(null);
+            loginviewmodel = BindingContext as LoginViewModel;
+            //if (loginviewmodel != null) loginviewmodel.OnAppearing(null);
         }
-        void PerfilSelected(object sender, EventArgs e)
+        /*void PerfilSelected(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
             perfil=(Profile)picker.SelectedItem;
@@ -53,6 +49,6 @@ namespace SoporteCL.Views
             App.Current.Properties["IsLoggedIn"] = true;
            // MessagingCenter.Unsubscribe<ContentPage>(this, "Login");
             iml.ShowMainPage();
-        }
+        }*/
     }
 }

@@ -13,8 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+    <PackageReference Include="Unity" Version="5.11.1" />
     <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />  
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
@@ -24,13 +26,10 @@
     <EmbeddedResource Update="Views\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Notificaciones.xaml">
+    <EmbeddedResource Update="Views\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\NotificacionesNoLeidas.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\NuevaNotificacion.xaml">
+    <EmbeddedResource Update="Views\SignUpPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -51,5 +50,10 @@
     <None Update="Views\NuevaNotificacion.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\Main\" />
+    <Folder Include="ViewModels\Notifications\" />
   </ItemGroup>
 </Project>

@@ -9,9 +9,9 @@ using Xamarin.Forms;
 
 namespace SoporteCL.ViewModels
 {
-    class TodasViewModel : NotificacionesViewModel
+    class TodasViewModel : MainViewModel
     {
-        //Lista de redes de negocios disponibles para envio masivo de notificaciones
+        /*//Lista de redes de negocios disponibles para envio masivo de notificaciones
         readonly public List<string> redesNegocio = new List<string>();
         public TodasViewModel()
         {
@@ -83,6 +83,6 @@ namespace SoporteCL.ViewModels
             {
                 IsBusy = false;
             }
-        }
+        }*/
     }
 }

@@ -4,23 +4,26 @@ using Xamarin.Forms.Xaml;
 using SoporteCL.Views;
 using System.IO;
 using SoporteCL.Login;
+using System.Threading.Tasks;
+using SoporteCL.ViewModels.Base;
+using SoporteCL.Services.Navigation;
 
 /*
  * Modulo de inicio del proyecto PCL, invocado por clase principal de cada plataforma. Carga la vista principal de la aplicación.
  */
 namespace SoporteCL
 {
-    public partial class App : Xamarin.Forms.Application, ILoginManager
+    public partial class App : Xamarin.Forms.Application//, ILoginManager
     {
 
         //public static NotificacionesDatabase database;
-        public new static App Current;
+        //public new static App Current;
 
-        private MainPage main;
+        //private MainPage main;
         public App()
         {
             InitializeComponent();
-            Current = this;
+            /*Current = this;
             var isLoggedIn = Properties.ContainsKey("IsLoggedIn") ? (bool)Properties["IsLoggedIn"] : false;
             if (isLoggedIn)
             {
@@ -30,10 +33,27 @@ namespace SoporteCL
             else
             {
                 MainPage = new LoginPage(this);
-            }           
+            }    */       
         }
+        protected override void OnStart()
+        {
+            base.OnStart();
+            InitNavigation();
+        }
+        private Task InitNavigation()
+        {
+            var navigationService = ViewModelLocator.Instance.Resolve<INavigationService>();
+            return navigationService.InitializeAsync();
+        }
+        protected override void OnSleep()
+        {
 
-        public void Logout()
+        }
+        protected override void OnResume()
+        {
+            base.OnResume();
+        }
+        /*public void Logout()
         {
             Properties["IsLoggedIn"] = false;
             Properties.Remove("name");
@@ -44,8 +64,8 @@ namespace SoporteCL
         {       
             if (main == null) MainPage = main = new MainPage();
             else MainPage = main;
-        }
-       
+        }*/
+
 
 
 

@@ -9,7 +9,7 @@ using Xamarin.Forms;
  */
 namespace SoporteCL.ViewModels
 {
-    public class NoLeidosViewModel : NotificacionesViewModel
+    /*public class NoLeidosViewModel : MainViewModel
     {
 
         public NoLeidosViewModel()
@@ -44,5 +44,5 @@ namespace SoporteCL.ViewModels
                 IsBusy = false;
             }
         }
-    }
+    }*/
 }

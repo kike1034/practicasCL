@@ -43,6 +43,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.6, )"
@@ -52,6 +56,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Unity": {
+              "target": "Package",
+              "version": "[5.11.1, )"
             },
             "Xam.Plugins.Notifier": {
               "target": "Package",

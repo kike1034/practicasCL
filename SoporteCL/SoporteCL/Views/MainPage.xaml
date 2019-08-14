@@ -1,42 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-            mc:Ignorable="d"
-            xmlns:views="clr-namespace:SoporteCL.Views"
-            x:Class="SoporteCL.Views.MainPage">
-
-    <TabbedPage.ToolbarItems>
-        <ToolbarItem Text="Cerrar Sesion" Clicked="BtnLogoutClicked" />
-    </TabbedPage.ToolbarItems>
-    <!-- Pagina principal etiquetada. Sus hijos corresponden a las etiquetas a las que se navegaran. 
-    Se incluyen como contenido la vista y, para ioS, un icono para la etiqueta -->
-    <TabbedPage.Children>
-        
-        <!--Etiqueta que contendra una vista con todas las notificaciones recibidas (leidas y no leidas)-->
-        <NavigationPage Title="Recibidas">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_notification.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
-            <x:Arguments>
-                <views:Notificaciones />
-            </x:Arguments>
-        </NavigationPage>
-        
-        <!--Etiqueta que contendra una vista con solo las notificaciones no leidas-->
-        <NavigationPage Title="No Leidas">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_notification.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
-            <x:Arguments>
-                <views:NotificacionesNoLeidas />
-            </x:Arguments>
-        </NavigationPage>
-    </TabbedPage.Children>
-    
-</TabbedPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SoporteCL.Views.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

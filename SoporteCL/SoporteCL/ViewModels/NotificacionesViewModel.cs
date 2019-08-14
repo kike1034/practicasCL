@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using SoporteCL.Helpers;
 using SoporteCL.Models;
+using SoporteCL.ViewModels.Base;
 using SoporteCL.Views;
 using Xamarin.Forms;
 
@@ -12,7 +13,7 @@ using Xamarin.Forms;
  */
 namespace SoporteCL.ViewModels
 {
-    public abstract class NotificacionesViewModel : BaseViewModel
+   /* public abstract class NotificacionesViewModel : BaseViewModel
     {
         //Colleccion de Notificaciones no leidas que seran observables
         public ObservableRangeCollection<Notificacion> Notifs { get; set; }
@@ -64,5 +65,5 @@ namespace SoporteCL.ViewModels
 
         //Metodo asincrono para recargar la pagina. Cuando el hilo no este ocupado, se vaciara la lista del ViewModel y se volveran a cargar en ella las Notificaciones de la base de datos
         public abstract Task ExecuteLoadNotifs();
-    }
+    }*/
 }

@@ -42,6 +42,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.1, )"
@@ -74,6 +78,10 @@
               "target": "Package",
               "version": "[1.2.0, )"
             },
+            "Xamarin.Firebase.Auth": {
+              "target": "Package",
+              "version": "[71.1605.0, )"
+            },
             "Xamarin.Firebase.Messaging": {
               "target": "Package",
               "version": "[71.1740.0, )"
@@ -81,6 +89,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.1.0.673156, )"
+            },
+            "Xamarin.GooglePlayServices.Auth": {
+              "target": "Package",
+              "version": "[71.1600.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -129,6 +141,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.6, )"
@@ -138,6 +154,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Unity": {
+              "target": "Package",
+              "version": "[5.11.1, )"
             },
             "Xam.Plugins.Notifier": {
               "target": "Package",

@@ -2,6 +2,29 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.16299": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -613,13 +636,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -697,7 +734,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -712,6 +751,29 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -1491,13 +1553,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -1564,7 +1640,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -1579,6 +1657,29 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm-aot": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -2359,13 +2460,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -2432,7 +2547,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -2447,6 +2564,29 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm64-aot": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -3224,13 +3364,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -3294,7 +3448,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -3309,6 +3465,29 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -4088,13 +4267,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -4161,7 +4354,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -4176,6 +4371,29 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64-aot": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -4956,13 +5174,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -5029,7 +5261,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -5044,6 +5278,29 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -5823,13 +6080,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -5896,7 +6167,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -5911,6 +6184,29 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86-aot": {
+      "Acr.UserDialogs/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "2.1.8"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -6691,13 +6987,27 @@
           "lib/uap10.0.16299/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unity.Abstractions.dll": {},
+          "lib/netstandard2.0/Unity.Container.dll": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -6764,7 +7074,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
           "Microsoft.EntityFrameworkCore": "2.2.6",
+          "Unity": "5.11.1",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.673156",
@@ -6780,6 +7092,75 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/7.0.4": {
+      "sha512": "J+3+rSVtAAUqvaXC0NGZ6HAcSXMaMyqvKsV1sMoraT7g+Zv/r4QmgUUITPu875n0uO57Y87Xn6IbLVDPje6tlw==",
+      "type": "package",
+      "path": "acr.userdialogs/7.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.7.0.4.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/monoandroid81/Acr.UserDialogs.dll",
+        "lib/monoandroid81/Acr.UserDialogs.pdb",
+        "lib/monoandroid90/Acr.UserDialogs.dll",
+        "lib/monoandroid90/Acr.UserDialogs.pdb",
+        "lib/netstandard2.0/Acr.UserDialogs.dll",
+        "lib/netstandard2.0/Acr.UserDialogs.pdb",
+        "lib/uap10.0.16299/Acr.UserDialogs.dll",
+        "lib/uap10.0.16299/Acr.UserDialogs.pdb",
+        "lib/uap10.0.16299/Acr.UserDialogs.pri",
+        "lib/uap10.0.16299/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/ActionSheetContentDialog.xbf",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/DatePickerControl.xbf",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/LoginContentDialog.xbf",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/ProgressContentDialog.xbf",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/TimePickerControl.xbf",
+        "lib/xamarinios10/Acr.UserDialogs.dll",
+        "lib/xamarinios10/Acr.UserDialogs.pdb"
+      ]
+    },
+    "Coding4Fun.Toolkit.Controls/2.1.8": {
+      "sha512": "PCRWgCiW9H8qzT8xYxNtpq4ZWpvh2gtrKAnWtEOXzapyXTEt8esCt0cqRwvosW+bytyfohonmB7UxB0EGXmdsQ==",
+      "type": "package",
+      "path": "coding4fun.toolkit.controls/2.1.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "coding4fun.toolkit.controls.2.1.8.nupkg.sha512",
+        "coding4fun.toolkit.controls.nuspec",
+        "content/ReadMe.Coding4Fun.Toolkit.txt",
+        "content/windowsphone8/Toolkit.Content/ApplicationBar.Cancel.png",
+        "content/windowsphone8/Toolkit.Content/ApplicationBar.Check.png",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls.dll",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls.pri",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls/Coding4Fun.Toolkit.Controls.xr.xml",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls/Themes/Generic.xbf",
+        "lib/netcore451/Coding4Fun.Toolkit.dll",
+        "lib/netcore451/Coding4Fun.Toolkit.pri",
+        "lib/windowsphone8/Coding4Fun.Toolkit.Controls.dll",
+        "lib/windowsphone8/Coding4Fun.Toolkit.dll",
+        "lib/windowsphone8/cs/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/da/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/de/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/es/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/fr/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/fr/hu/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/it/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/ko/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/no/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/pl/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/pt/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/ru/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/sk/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls.pri",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls/Coding4Fun.Toolkit.Controls.xr.xml",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls/Themes/Generic.xbf",
+        "lib/wpa81/Coding4Fun.Toolkit.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.pri"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/2.2.6": {
       "sha512": "vmrMrjiCO7FkuFJwt/MHl6pk6cSXPtB1miPMtn0KTO7WqwaQ2WQ4gWpC/m753PzVriH2X2kIadWrd9SJb7KVww==",
       "type": "package",
@@ -11759,10 +12140,10 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11778,10 +12159,53 @@
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Unity/5.11.1": {
+      "sha512": "4LroMtZWLwc2krUsH8IX62fxNoOKb1463wHdtu617iVAOkMaFZ4e4kp6VR7tBi20jxvezlRbknWoeCXWg903yg==",
+      "type": "package",
+      "path": "unity/5.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net40/Unity.Abstractions.pdb",
+        "lib/net40/Unity.Container.dll",
+        "lib/net40/Unity.Container.pdb",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.pdb",
+        "lib/net45/Unity.Container.dll",
+        "lib/net45/Unity.Container.pdb",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.pdb",
+        "lib/net46/Unity.Container.dll",
+        "lib/net46/Unity.Container.pdb",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.pdb",
+        "lib/net47/Unity.Container.dll",
+        "lib/net47/Unity.Container.pdb",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.pdb",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.pdb",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.pdb",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.pdb",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.pdb",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.pdb",
+        "unity.5.11.1.nupkg.sha512",
+        "unity.nuspec"
       ]
     },
     "Win2D.uwp/1.20.0": {

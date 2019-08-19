@@ -84,3 +84,10 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\System.Interactive.Async.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\System.Memory.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\Acr.UserDialogs.pdb
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\BTProgressHUD.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\Unity.Abstractions.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\Unity.Abstractions.pdb
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\Unity.Container.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.iOS\bin\iPhone\Debug\Unity.Container.pdb

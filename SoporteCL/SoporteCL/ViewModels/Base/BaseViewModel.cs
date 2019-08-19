@@ -42,6 +42,9 @@ namespace SoporteCL.ViewModels.Base
         {
             return Task.FromResult(false);
         }
+        public virtual void OnAppearing(object navigationContext)
+        {
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void RaisePropertyChanged([CallerMemberName]string propertyName = "")

@@ -4,12 +4,12 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
-using Firebase;
-using Firebase.Auth;
 using SoporteCL.Droid.Activities;
 using SoporteCL.Droid.Services.FirebaseAuth;
 using SoporteCL.Services.FirebaseAuth;
 using Xamarin.Forms;
+using Android.Gms.Extensions;
+using Firebase.Auth;
 
 [assembly: Dependency(typeof(FirebaseAuthService))]
 namespace SoporteCL.Droid.Services.FirebaseAuth
@@ -25,8 +25,7 @@ namespace SoporteCL.Droid.Services.FirebaseAuth
 
         public bool IsUserSigned()
         {
-            FirebaseApp app=MainActivity.app;
-            var user = Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
+            var user = MainActivity.auth.CurrentUser;
             var signedIn = user != null;
             return signedIn;
         }
@@ -35,7 +34,7 @@ namespace SoporteCL.Droid.Services.FirebaseAuth
         {
             try
             {
-                Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).SignOut();
+                MainActivity.auth.SignOut();
                 return true;
             }
             catch (Exception ex)
@@ -48,7 +47,7 @@ namespace SoporteCL.Droid.Services.FirebaseAuth
         {
             try
             {
-                await Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).SignInWithEmailAndPasswordAsync(email, password);
+                await MainActivity.auth.SignInWithEmailAndPasswordAsync(email, password);
                 return true;
             }
             catch (Exception ex)
@@ -69,7 +68,7 @@ namespace SoporteCL.Droid.Services.FirebaseAuth
             try
             {
                 AuthCredential credential = GoogleAuthProvider.GetCredential(token, null);
-                await Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).SignInWithCredentialAsync(credential);
+                await MainActivity.auth.SignInWithCredentialAsync(credential);
                 return true;
             }
             catch (Exception ex)
@@ -82,7 +81,7 @@ namespace SoporteCL.Droid.Services.FirebaseAuth
         {
             try
             {
-                await Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).CreateUserWithEmailAndPasswordAsync(email, password);
+                await MainActivity.auth.CreateUserWithEmailAndPassword(email, password);
                 return true;
             }
             catch (Exception ex)

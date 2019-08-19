@@ -1,7 +1,14 @@
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\SoporteCL.Android.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Acr.UserDialogs.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\AndHUD.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\FirebaseAdmin.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Google.Api.Gax.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Google.Api.Gax.Rest.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Google.Apis.Auth.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Google.Apis.Auth.PlatformServices.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Google.Apis.Core.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Google.Apis.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.dll
@@ -18,6 +25,7 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Microsoft.Extensions.Primitives.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\mscorlib.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Plugin.LocalNotifications.Abstractions.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Plugin.LocalNotifications.dll
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.Android\obj\Debug\90\android\assets\Remotion.Linq.dll

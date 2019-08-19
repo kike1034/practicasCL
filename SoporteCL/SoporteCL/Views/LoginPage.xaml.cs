@@ -34,6 +34,7 @@ namespace SoporteCL.Views
             //base.OnAppearing();
             // loginviewmodel.LoadProfilesCommand.Execute(null);
             loginviewmodel = BindingContext as LoginViewModel;
+            if (loginviewmodel != null) loginviewmodel.OnAppearing(null);
             //if (loginviewmodel != null) loginviewmodel.OnAppearing(null);
         }
         /*void PerfilSelected(object sender, EventArgs e)

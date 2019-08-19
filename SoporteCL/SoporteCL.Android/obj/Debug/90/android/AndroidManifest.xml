@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.SoporteCL" android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.SoporteCL" android:installLocation="preferExternal">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="SoporteCL.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <!--    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
-                android:exported="false"/>
-      <receiver
-            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-            android:exported="true"
-            android:permission="com.google.android.c2dm.permission.SEND">
-         <intent-filter>
-            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-            <category android:name="com.companyname.SoporteCL" />
-         </intent-filter>
-      </receiver>-->
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SoporteCLAndroid" android:theme="@style/MainTheme" android:name="md531277e17b1b6271220fb813a8f7fb117.MainActivity">
+    <!--
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="com.companyname.SoporteCL" />
+			</intent-filter>
+		</receiver>-->
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SoporteCL.Android" android:theme="@style/MainTheme" android:name="md531277e17b1b6271220fb813a8f7fb117.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.1, )"
@@ -93,6 +97,26 @@
             "Xamarin.GooglePlayServices.Auth": {
               "target": "Package",
               "version": "[71.1600.0, )"
+            },
+            "Xamarin.GooglePlayServices.Auth.Api.Phone": {
+              "target": "Package",
+              "version": "[71.1600.0, )"
+            },
+            "Xamarin.GooglePlayServices.Auth.Base": {
+              "target": "Package",
+              "version": "[71.1600.0, )"
+            },
+            "Xamarin.GooglePlayServices.Base": {
+              "target": "Package",
+              "version": "[71.1610.0, )"
+            },
+            "Xamarin.GooglePlayServices.Basement": {
+              "target": "Package",
+              "version": "[71.1620.0, )"
+            },
+            "Xamarin.GooglePlayServices.Tasks": {
+              "target": "Package",
+              "version": "[71.1601.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

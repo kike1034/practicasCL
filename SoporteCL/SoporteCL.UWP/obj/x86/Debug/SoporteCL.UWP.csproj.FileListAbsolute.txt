@@ -94,3 +94,15 @@ C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\obj\x86\Debug\Mic
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\obj\x86\Debug\Microsoft.Extensions.Logging.Abstractions\en-US\Microsoft.Extensions.Logging.Abstractions.Resource.resw
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\obj\x86\Debug\Microsoft.Extensions.Options\en-US\Microsoft.Extensions.Options.Resources.resw
 C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\obj\x86\Debug\Microsoft.Extensions.Primitives\en-US\Microsoft.Extensions.Primitives.Resources.resw
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Acr.UserDialogs.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Acr.UserDialogs.pdb
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Coding4Fun.Toolkit.Controls.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Coding4Fun.Toolkit.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Unity.Abstractions.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Unity.Abstractions.pdb
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Unity.Container.dll
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\bin\x86\Debug\Unity.Container.pdb
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\obj\x86\Debug\Acr.UserDialogs.pri.xml
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\obj\x86\Debug\Coding4Fun.Toolkit.Controls.pri.xml
+C:\Users\jamigo\Source\Repos\SoporteCL\SoporteCL\SoporteCL.UWP\obj\x86\Debug\Coding4Fun.Toolkit.pri.xml

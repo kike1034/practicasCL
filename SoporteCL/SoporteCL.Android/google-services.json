@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "310938815952",
-    "firebase_url": "https://soportecl-6cdbf.firebaseio.com",
-    "project_id": "soportecl-6cdbf",
-    "storage_bucket": "soportecl-6cdbf.appspot.com"
+    "project_number": "794347157754",
+    "firebase_url": "https://soportecl-b0939.firebaseio.com",
+    "project_id": "soportecl-b0939",
+    "storage_bucket": "soportecl-b0939.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:310938815952:android:16a6a04d9417fbbc",
+        "mobilesdk_app_id": "1:794347157754:android:16a6a04d9417fbbc",
         "android_client_info": {
           "package_name": "com.companyname.SoporteCL"
         }
       },
       "oauth_client": [
         {
-          "client_id": "310938815952-d0vc7gicjfbvilsfnngm36t6jlcu39il.apps.googleusercontent.com",
+          "client_id": "794347157754-r6rfc8ndo9kj7cmh61ba0mg72f8b9nqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.companyname.SoporteCL",
+            "certificate_hash": "55af2bfc4682b0da253e376fe24a8ac0a8ac86f1"
+          }
+        },
+        {
+          "client_id": "794347157754-lu1bt0njkgtl7d8tvhpt4imt3a8id1qi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDFB3i9ao-dgcTkIUlaZFSwQLRtN_Gw6TM"
+          "current_key": "AIzaSyDEqUEaOAU71pQGG9QNMFPz07rN8LgdPWk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "310938815952-d0vc7gicjfbvilsfnngm36t6jlcu39il.apps.googleusercontent.com",
+              "client_id": "794347157754-lu1bt0njkgtl7d8tvhpt4imt3a8id1qi.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

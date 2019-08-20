@@ -18,7 +18,7 @@ using Firebase.Auth;
 
 namespace SoporteCL.Droid
 {
-    [Activity(Label = "SoporteCL.Android", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "SoporteCL", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         private static Firebase.FirebaseApp app;
@@ -31,7 +31,7 @@ namespace SoporteCL.Droid
             base.OnCreate(savedInstanceState);
             InitFirebaseAuth();
             UserDialogs.Init(this);
-            //Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             LoadApplication(new App());
@@ -61,15 +61,6 @@ namespace SoporteCL.Droid
 
             }
 
-        }
-        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
-        {
-            base.OnActivityResult(requestCode, resultCode, data);
-            if (requestCode == FirebaseAuthService.REQ_AUTH && resultCode == Result.Ok)
-            {
-                GoogleSignInAccount sg = (GoogleSignInAccount)data.GetParcelableExtra("result");
-                MessagingCenter.Send(FirebaseAuthService.KEY_AUTH, FirebaseAuthService.KEY_AUTH, sg.IdToken);
-            }
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

@@ -108,6 +108,7 @@
     <Content Include="cancel.png" />
     <Content Include="cllogo.png" />
     <Content Include="delete.png" />
+    <Content Include="glogin.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />

@@ -185,4 +185,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\cllogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\glogin.png" />
+  </ItemGroup>
 </Project>

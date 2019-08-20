@@ -38,6 +38,10 @@ namespace SoporteCL.ViewModels.Base
             get { return title; }
             set { title=value; RaisePropertyChanged(); }
         }
+        public BaseViewModel()
+        {
+            NavigationService = ViewModelLocator.Instance.Resolve<INavigationService>();
+        }
         public virtual Task InitializeAsync(object navigationData)
         {
             return Task.FromResult(false);

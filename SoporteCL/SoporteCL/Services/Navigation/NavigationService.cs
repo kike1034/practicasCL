@@ -98,11 +98,11 @@ namespace SoporteCL.Services.Navigation
         }
         private void CreatePageViewModelMappings()
         {
-           // _mappings.Add(typeof(TodasViewModel), typeof(Notificaciones));
+            // _mappings.Add(typeof(TodasViewModel), typeof(Notificaciones));
             _mappings.Add(typeof(MainViewModel), typeof(MainPage));
             _mappings.Add(typeof(LoginViewModel), typeof(LoginPage));
             _mappings.Add(typeof(SignUpViewModel), typeof(SignUpPage));
-
+            
 
         }
 

@@ -6,10 +6,6 @@
              mc:Ignorable="d"
              x:Class="SoporteCL.Views.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Button Text="Logout" Command="{Binding LogoutCommand}" BackgroundColor="#1FBED6" HorizontalOptions="Fill" TextColor="White" />
     </ContentPage.Content>
 </ContentPage>

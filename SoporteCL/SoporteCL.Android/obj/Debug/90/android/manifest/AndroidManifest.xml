@@ -14,13 +14,12 @@
 				<category android:name="com.companyname.SoporteCL" />
 			</intent-filter>
 		</receiver>-->
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SoporteCL.Android" android:theme="@style/MainTheme" android:name="md531277e17b1b6271220fb813a8f7fb117.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SoporteCL" android:theme="@style/MainTheme" android:name="md531277e17b1b6271220fb813a8f7fb117.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="GoogleLogin" android:theme="@style/Theme.AppCompat.Light.DarkActionBar" android:name="md5142f2a1eeb529c20b07268a0396af940.GoogleLoginActivity" />
     <receiver android:enabled="true" android:label="Local Notifications Plugin Broadcast Receiver" android:name="md51251ca0436b286678a1cd2c1ca81248e.ScheduledAlarmHandler" />
     <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.BatteryBroadcastReceiver" />

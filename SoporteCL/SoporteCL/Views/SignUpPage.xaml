@@ -3,13 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Common="clr-namespace:SoporteCL.Helpers"
              mc:Ignorable="d"
              x:Class="SoporteCL.Views.SignUpPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+
+
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <Grid Padding="20, 30, 20, 20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Image Source="cllogo.png" WidthRequest="200" HeightRequest="150"/>
+
+
+
+                <Grid Grid.Row="2" HorizontalOptions="Fill" Padding="5">
+
+                    <Entry Placeholder="Correo electrónico" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="Black"   Text="{Binding Username}"/>
+                </Grid>
+                <BoxView HeightRequest="1" Grid.Row="2" HorizontalOptions="Fill" BackgroundColor="White" VerticalOptions="End"/>
+
+                <Grid Grid.Row="3" HorizontalOptions="Fill" Padding="5">
+
+                    <Entry Placeholder="Contraseña"   IsPassword="true" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="Black"   Text="{Binding Password}"/>
+                </Grid>
+                <BoxView HeightRequest="1" Grid.Row="3" HorizontalOptions="Fill" BackgroundColor="White" VerticalOptions="End"/>
+
+                <StackLayout Grid.Row="4" Spacing="12" HorizontalOptions="Fill" Padding="{x:Static Common:DoubleResources.ButtonGroupPadding}">
+                    <Button Text="Registrate" Command="{Binding SignUpCommand}"  BackgroundColor="#c33853" HorizontalOptions="Fill" TextColor="White" HeightRequest="{x:Static Common:DoubleResources.SignUpButtonHeight}"/>
+
+
+                    <StackLayout Spacing="5">
+                        <Label Text="Logueate si ya tienes una cuenta"  TextColor="Blue" HorizontalOptions="Center" FontSize="14" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Command="{Binding LoginCommand}"
+                                    NumberOfTapsRequired="1" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout >
+                </StackLayout>
+
+
+            </Grid>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

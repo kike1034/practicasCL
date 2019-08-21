@@ -20,9 +20,6 @@ namespace SoporteCL.ViewModels.Login
     {
         private ICommand _signUpCommand;
         private ICommand _loginCommand;
-        private ICommand _loginGoogleCommand;
-
-
         private String _username;
         private String _password;
 
@@ -56,9 +53,8 @@ namespace SoporteCL.ViewModels.Login
 
         private async Task LoginCommandExecute()
         {
-            if (await _firebaseService.SignIn(Username, Password))
+            if (await _firebaseService.SignIn(Username, Password)) 
             {
-               
                 await NavigationService.NavigateToAsync<MainViewModel>();
             }
             else

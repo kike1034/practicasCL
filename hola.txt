@@ -4,3 +4,8 @@ SDK:
 https://firebase.google.com/docs/admin/setup
 ASYNC AWAIT TASK:
 https://thatcsharpguy.github.io/post/async-await/
+
+
+
+QR PROYECT:
+https://xamarinlatino.com/leer-c%C3%B3digos-de-barra-desde-una-app-usando-xamarin-forms-946011a20a74

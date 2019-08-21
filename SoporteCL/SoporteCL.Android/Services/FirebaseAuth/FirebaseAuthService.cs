@@ -9,6 +9,7 @@ using SoporteCL.Services.FirebaseAuth;
 using Xamarin.Forms;
 using Android.Gms.Extensions;
 using Firebase.Auth;
+using Firebase.Analytics;
 
 [assembly: Dependency(typeof(FirebaseAuthService))]
 namespace SoporteCL.Droid.Services.FirebaseAuth
@@ -49,18 +50,37 @@ namespace SoporteCL.Droid.Services.FirebaseAuth
             }
         }
 
-        public async Task<bool> SignUp(string email, string password)
+        public async Task<bool> SendEmailVerification()
         {
             try
             {
-                await MainActivity.auth.CreateUserWithEmailAndPassword(email, password);
-                //await MainActivity.auth.CurrentUser.SendEmailVerification();
+                FirebaseUser user= MainActivity.auth.CurrentUser;
+                await user.SendEmailVerification();
                 return true;
             }
             catch (Exception ex)
             {
                 return false;
             }
+        }
+
+        public async Task<bool> SignUp(string email, string password)
+        {
+            try
+            {
+                await MainActivity.auth.CreateUserWithEmailAndPasswordAsync(email, password);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public string GetUserId()
+        {
+            var user = MainActivity.auth.CurrentUser;
+            return user.Uid;
         }
     }
 }

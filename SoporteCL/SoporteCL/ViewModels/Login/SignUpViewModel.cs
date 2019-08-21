@@ -43,6 +43,8 @@ namespace SoporteCL.ViewModels.Login
         {
             if (await _firebaseService.SignUp(Username, Password))
             {
+                //TODO cuando este implementada la verificación por correo.
+                //if (await _firebaseService.SendEmailVerification()) _userDialogService.Toast("Email de verificación enviado a la dirección de correo");
                 await NavigationService.NavigateToAsync<MainViewModel>();
             }
             else
